@@ -1,0 +1,25 @@
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 71vh;
+}
+section {
+  margin-left: 0;
+  padding: $padding/2;
+}
+article {
+  //margin-left: 50px;
+  padding: $padding/2;
+}
+@media (min-width: $tabletPortrait) {
+  section {
+    margin-left: 200px;
+    padding: 2px 16px;
+  }
+  article {
+    margin-left: 160px;
+    padding: $padding/2 $padding;
+    @include flex-center;
+    font-size: 1.3em;
+  }
+}
