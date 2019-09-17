@@ -4,7 +4,7 @@
     font-size: 1.8em;
     padding: $padding;
     position: absolute;
-    top: 20%;
+    top: 16%;
     left: 53%;
   }
   .row-01,
@@ -16,15 +16,14 @@
 
   .project-article {
     margin-top: 150px;
-    // margin-bottom: 150px;
+    margin-bottom: 150px;
     max-width: 100%;
     border-radius: 20px;
-    height: 250px;
+    height: 350px;
     border: 1px solid black;
-    background-color: #d1d1d1;
-
+    //background-color: #d1d1d1;
     position: relative;
-    opacity: 0.75;
+    // opacity: 0.75;
   }
   h2 {
     margin-bottom: $padding;
@@ -51,6 +50,9 @@
     transition: 0.3s ease-in;
   }
   @media (min-width: $tabletPortrait) {
+    .section-title {
+      top: 5%;
+    }
     .row-01,
     .row-02,
     .row-03 {
@@ -61,16 +63,10 @@
     }
 
     .project-article {
-      //   max-width: 100%;
-      //   font-size: 1em;
-    }
-
-    h2 {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
-      padding: 0;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      width: 450px;
+      font-size: 1em;
     }
 
     .box {

@@ -264,8 +264,25 @@ article {
     font-size: 1.3em;
   }
 }
-.about-me {
-  font-size: 2em;
+.home-contents .about-me {
+  text-align: center;
+  font-size: 2.4em;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.home-contents .skills {
+  font-size: 1.5em;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.home-contents .btn-project {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.home-contents .btn-project input[type=submit] {
+  font-size: 1.5em;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 .projects .section-title {
@@ -273,7 +290,7 @@ article {
   font-size: 1.8em;
   padding: 30px;
   position: absolute;
-  top: 20%;
+  top: 16%;
   left: 53%;
 }
 .projects .row-01,
@@ -284,13 +301,12 @@ article {
 }
 .projects .project-article {
   margin-top: 150px;
+  margin-bottom: 150px;
   max-width: 100%;
   border-radius: 20px;
-  height: 250px;
+  height: 350px;
   border: 1px solid black;
-  background-color: #d1d1d1;
   position: relative;
-  opacity: 0.75;
 }
 .projects h2 {
   margin-bottom: 30px;
@@ -316,6 +332,9 @@ article {
   transition: 0.3s ease-in;
 }
 @media (min-width: 56.25em) {
+  .projects .section-title {
+    top: 5%;
+  }
   .projects .row-01,
 .projects .row-02,
 .projects .row-03 {
@@ -324,12 +343,11 @@ article {
     align-items: center;
     justify-content: space-evenly;
   }
-  .projects h2 {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
-    padding: 0;
+  .projects .project-article {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 450px;
+    font-size: 1em;
   }
   .projects .box {
     position: relative;
@@ -346,10 +364,6 @@ footer {
   background-color: #ebebeb;
   min-height: 20vh;
   text-align: center;
-}
-
-.fa-fw {
-  width: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
