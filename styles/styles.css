@@ -358,6 +358,12 @@ article {
   }
 }
 
+.single-project h1 {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
 footer {
   margin-top: 36px;
   border-top: 1px solid #000;
