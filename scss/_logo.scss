@@ -1,16 +1,15 @@
 .logo {
   position: absolute;
-  top: 0%;
-  left: 10%;
+  top: -6%;
+  left: 0%;
   width: 250px;
   margin-left: -90px;
   z-index: 1;
+  width: 500px;
 
   @media (min-width: $tabletPortrait) {
-    top: 10%;
-    left: 10%;
-  }
-  img {
-    width: 700px;
+    top: -3%;
+    left: -3%;
+    width: 600px;
   }
 }

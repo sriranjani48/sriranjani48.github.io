@@ -1,3 +1,22 @@
-.about-me {
-  font-size: 2em;
+.home-contents {
+  .about-me {
+    text-align: center;
+    font-size: 2.4em;
+    padding: $padding;
+    margin-bottom: 30px;
+  }
+  .skills {
+    font-size: 1.5em;
+    padding: $padding;
+    margin-bottom: 30px;
+  }
+  .btn-project {
+    padding: $padding;
+    margin-bottom: 30px;
+    input[type="submit"] {
+      font-size: 1.5em;
+      border-radius: 15px;
+      padding: $padding/2;
+    }
+  }
 }
