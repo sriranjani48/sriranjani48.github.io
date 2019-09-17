@@ -65,20 +65,19 @@ header {
 
 .logo {
   position: absolute;
-  top: 0%;
-  left: 10%;
+  top: -6%;
+  left: 0%;
   width: 250px;
   margin-left: -90px;
   z-index: 1;
+  width: 500px;
 }
 @media (min-width: 56.25em) {
   .logo {
-    top: 10%;
-    left: 10%;
+    top: -3%;
+    left: -3%;
+    width: 600px;
   }
-}
-.logo img {
-  width: 700px;
 }
 
 nav {
