@@ -1,9 +1,11 @@
 h1 {
-  color: Green;
+  color: Blue;
+  font-size: 4em;
 }
 
 p {
-  color: Red;
+  color: purple;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=styles.css.map */
