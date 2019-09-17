@@ -81,12 +81,6 @@ node_modules/
 
 .tmp/
 
-# Ignore compiled CSS from repository
-
-styles/
-styles/*.css
-styles/*.map
-
 
 # Misc files to ignore #
 ########################
@@ -100,7 +94,3 @@ styles/*.map
 *.swp
 *.vi
 *~
-
-
-# styles.css
-# styles.css.map
