@@ -1,0 +1,10 @@
+header {
+  padding: $padding/2 $padding;
+  background-color: rgb(235, 235, 235);
+  height: 130px;
+  @include flex-layout-row;
+
+  @media (min-width: $tabletPortrait) {
+    @include flex-center;
+  }
+}

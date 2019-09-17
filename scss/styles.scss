@@ -1,1 +1,19 @@
-@import "testStyle";
+@import "variables";
+@import "mixins";
+@import "resets";
+@import "typography";
+
+@import "body";
+@import "wrapper";
+@import "header";
+@import "logo";
+
+@import "nav";
+@import "hamburger";
+@import "main";
+
+@import "home";
+@import "projects";
+@import "about";
+
+@import "footer";

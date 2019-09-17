@@ -1,0 +1,72 @@
+//Hamburger styles
+.menu-btn {
+  display: block;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 6%;
+  right: 10%;
+
+  .button-content {
+    height: 24px;
+  }
+
+  .text {
+    @include visually-hidden;
+  }
+
+  .bar {
+    $transition: all 0.3s ease-in-out;
+    $bar-height: 4px;
+    cursor: pointer;
+
+    @mixin bar($pos-neg: "") {
+      content: "";
+      height: $bar-height;
+      top: #{$pos-neg}10px;
+      left: 0;
+      background-color: black;
+      position: absolute;
+      transition: $transition;
+      .show & {
+        top: 0;
+        transform: rotate(#{$pos-neg}45deg);
+      }
+    }
+
+    display: block;
+    height: $bar-height;
+    background-color: black;
+    width: 90%;
+    position: relative;
+
+    transition: $transition;
+
+    .show & {
+      background-color: transparent;
+    }
+
+    &:after {
+      width: 70%;
+      @include bar;
+    }
+    &:before {
+      width: 70%;
+      @include bar("-");
+    }
+  }
+  &:focus,
+  .button-content:focus {
+    outline: none;
+  }
+
+  &:focus .button-content {
+    outline: 5px solid #7683c9;
+  }
+
+  @media (min-width: $tabletPortrait) {
+    display: none;
+  }
+}
