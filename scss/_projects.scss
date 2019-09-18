@@ -21,9 +21,11 @@
     border-radius: 20px;
     height: 350px;
     border: 1px solid black;
-    //background-color: #d1d1d1;
     position: relative;
-    // opacity: 0.75;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
   }
   h2 {
     margin-bottom: $padding;
@@ -40,6 +42,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
+
+    p {
+      font-size: 1.6em;
+      position: absolute;
+      top: 90px;
+      right: -200px;
+      transform: translate(-50%, -50%);
+      text-align: right;
+    }
   }
   .project-article a {
     text-decoration: none;
@@ -56,9 +67,7 @@
     .row-01,
     .row-02,
     .row-03 {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+      @include flex-layout-row;
       justify-content: space-evenly;
     }
 
@@ -75,6 +84,11 @@
       left: 0;
       transform: translate(0, 0);
       padding: 0;
+
+      p {
+        top: 130px;
+        right: -250px;
+      }
     }
   }
 }

@@ -63,20 +63,29 @@ header {
   }
 }
 
-.logo {
+svg {
+  height: 80px;
+  width: 350px;
   position: absolute;
-  top: -6%;
-  left: 0%;
-  width: 250px;
-  margin-left: -90px;
+  top: 2%;
+  left: 5%;
   z-index: 1;
-  width: 500px;
+}
+svg .svg-logo {
+  fill: black;
+  font-variant: small-caps;
+  font-family: "Phosphate";
+  font-size: 2.8em;
+  font-style: italic;
 }
 @media (min-width: 56.25em) {
-  .logo {
-    top: -3%;
-    left: -3%;
+  svg {
+    top: 10%;
+    left: 2.5%;
     width: 600px;
+  }
+  svg .svg-logo {
+    font-size: 4em;
   }
 }
 
@@ -306,6 +315,11 @@ article {
   height: 350px;
   border: 1px solid black;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 .projects h2 {
   margin-bottom: 30px;
@@ -323,6 +337,14 @@ article {
   transform: translate(-50%, -50%);
   padding: 10px;
 }
+.projects .box p {
+  font-size: 1.6em;
+  position: absolute;
+  top: 90px;
+  right: -200px;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
 .projects .project-article a {
   text-decoration: none;
   color: black;
@@ -338,8 +360,8 @@ article {
 .projects .row-02,
 .projects .row-03 {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-evenly;
   }
   .projects .project-article {
@@ -354,6 +376,10 @@ article {
     left: 0;
     transform: translate(0, 0);
     padding: 0;
+  }
+  .projects .box p {
+    top: 130px;
+    right: -250px;
   }
 }
 

@@ -1,15 +1,26 @@
-.logo {
+svg {
+  height: 80px;
+  width: 350px;
   position: absolute;
-  top: -6%;
-  left: 0%;
-  width: 250px;
-  margin-left: -90px;
+  top: 2%;
+  left: 5%;
   z-index: 1;
-  width: 500px;
+
+  .svg-logo {
+    fill: black;
+    font-variant: small-caps;
+    font-family: "Phosphate";
+    font-size: 2.8em;
+    font-style: italic;
+  }
 
   @media (min-width: $tabletPortrait) {
-    top: -3%;
-    left: -3%;
+    top: 10%;
+    left: 2.5%;
     width: 600px;
+
+    .svg-logo {
+      font-size: 4em;
+    }
   }
 }
