@@ -56,6 +56,8 @@ header {
 }
 @media (min-width: 56.25em) {
   header {
+    height: 0px;
+    border-right: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +67,7 @@ header {
 
 svg {
   height: 80px;
-  width: 350px;
+  width: 300px;
   position: absolute;
   top: 2%;
   left: 5%;
@@ -90,21 +92,24 @@ svg .svg-logo {
 }
 
 nav {
-  position: absolute;
-  top: 15%;
-  left: 0;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0);
-  background-color: #dfdfdf;
+  height: 0;
+  overflow: hidden;
+  width: calc(100% + 60px);
+  background-color: #a3a3a3;
 }
-nav nav.activated {
-  transition: all 0.3s ease-out;
+
+nav.activated {
+  transition: height 0.3s ease;
 }
+
 .show nav {
-  transform: scale(1);
+  margin-top: 30px;
+  height: 500px;
 }
 nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -122,6 +127,7 @@ nav li:hover, nav li:focus, nav li:active {
   border-bottom: none;
 }
 nav a {
+  display: block;
   font-size: 2em;
   padding: 20px;
   text-decoration: none;
@@ -130,6 +136,10 @@ nav a {
 
 @media (min-width: 56.25em) {
   nav {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    height: 100%;
     top: 0;
     left: 0;
     max-width: 350px;
@@ -244,7 +254,8 @@ nav a {
 main {
   max-width: 100%;
   margin: 0 auto;
-  min-height: 71vh;
+  height: 100%;
+  min-height: 73vh;
 }
 
 section {
@@ -329,19 +340,16 @@ article {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.projects .box {
-  font-size: 1em;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
+.projects .box img {
+  object-fit: contain;
+  height: 260px;
+  max-width: 100%;
 }
 .projects .box p {
-  font-size: 1.6em;
+  font-size: 1.5em;
   position: absolute;
-  top: 90px;
-  right: -200px;
+  top: 320px;
+  right: -35px;
   transform: translate(-50%, -50%);
   text-align: right;
 }
@@ -370,16 +378,11 @@ article {
     width: 450px;
     font-size: 1em;
   }
-  .projects .box {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
-    padding: 0;
+  .projects .box img {
+    object-fit: cover;
   }
   .projects .box p {
-    top: 130px;
-    right: -250px;
+    right: -40px;
   }
 }
 
@@ -389,6 +392,52 @@ article {
   color: black;
 }
 
+.project-links {
+  font-size: 1.3em;
+  text-align: center;
+  position: relative;
+  bottom: -70%;
+}
+.project-links a {
+  color: black;
+}
+.project-links a:nth-child(2) {
+  margin-left: 120px;
+}
+
+@media (min-width: 41.875em) {
+  .project-links a:nth-child(2) {
+    margin-left: 300px;
+  }
+}
+@media (min-width: 56.25em) {
+  .single-project .screen-images {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .single-project .screen-images .img {
+    flex: 50%;
+  }
+  .single-project .screen-images .img img {
+    width: 50%;
+  }
+
+  .project-links a {
+    font-size: 1.2em;
+  }
+  .project-links a:nth-child(2) {
+    margin-left: 100px;
+  }
+}
+@media (min-width: 78.125em) {
+  .project-links a {
+    font-size: 1.5em;
+  }
+  .project-links a:nth-child(2) {
+    margin-left: 350px;
+  }
+}
 footer {
   margin-top: 36px;
   border-top: 1px solid #000;

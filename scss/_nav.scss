@@ -1,24 +1,30 @@
 // Main Navigation styles
 nav {
-  //padding: 0 15px;
+  height: 0;
+  overflow: hidden;
+  width: calc(100% + 60px);
+
+  background-color: rgb(163, 163, 163);
+  // position: fixed;
+  // top: 15%;
+  // left: 0;
+  // width: 100%;
+  //margin: 0 auto;
+  // transform: scale(0);
+  //background-color: rgb(235, 235, 235);
+}
+nav.activated {
+  transition: height 0.3s ease;
+}
+nav {
   $height: 40px;
-  position: absolute;
-  top: 15%;
-  left: 0;
-  width: 100%;
-  margin: 0 auto;
-
-  transform: scale(0);
-  background-color: rgb(223, 223, 223);
-
-  nav.activated {
-    transition: all 0.3s ease-out;
-  }
-
   .show & {
-    transform: scale(1);
+    // transform: scale(1);
+    margin-top: 30px;
+    height: 500px;
   }
   ul {
+    @include flex-layout-row;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -37,6 +43,7 @@ nav {
     }
   }
   a {
+    display: block;
     font-size: 2em;
     padding: 20px;
     text-decoration: none;
@@ -45,6 +52,10 @@ nav {
 }
 @media (min-width: $tabletPortrait) {
   nav {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    height: 100%;
     $height: 40px;
     top: 0;
     left: 0;

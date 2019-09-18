@@ -5,3 +5,58 @@
     color: black;
   }
 }
+.project-links {
+  font-size: 1.3em;
+  text-align: center;
+  position: relative;
+  bottom: -70%;
+
+  a {
+    color: $text-color-dark;
+  }
+  a:nth-child(2) {
+    margin-left: 120px;
+  }
+}
+@media (min-width: $phoneLandscape) {
+  .project-links {
+    a:nth-child(2) {
+      margin-left: 300px;
+    }
+  }
+}
+
+@media (min-width: $tabletPortrait) {
+  .single-project {
+    .screen-images {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      .img {
+        flex: 50%;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .project-links {
+    a {
+      font-size: 1.2em;
+    }
+    a:nth-child(2) {
+      margin-left: 100px;
+    }
+  }
+}
+@media (min-width: $desktopMedium) {
+  .project-links {
+    a {
+      font-size: 1.5em;
+    }
+    a:nth-child(2) {
+      margin-left: 350px;
+    }
+  }
+}
