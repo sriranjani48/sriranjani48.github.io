@@ -3,9 +3,10 @@
     text-align: center;
     font-size: 1.8em;
     padding: $padding;
-    position: absolute;
+    position: relative;
     top: 16%;
     left: 53%;
+    margin-top: 50px;
   }
   .row-01,
   .row-02,
@@ -15,8 +16,8 @@
   }
 
   .project-article {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 120px;
+    margin-bottom: 130px;
     max-width: 100%;
     border-radius: 20px;
     height: 350px;

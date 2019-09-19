@@ -9,16 +9,15 @@ section {
   padding: $padding/2;
 }
 article {
-  //margin-left: 50px;
   padding: $padding/2;
 }
 @media (min-width: $tabletPortrait) {
   section {
-    margin-left: 200px;
+    margin-left: 180px;
     padding: 2px 16px;
   }
   article {
-    margin-left: 160px;
+    margin-left: 150px;
     padding: $padding/2 $padding;
     @include flex-center;
     font-size: 1.3em;

@@ -1,12 +1,9 @@
 header {
-  padding: $padding/2 $padding;
-  background-color: rgb(235, 235, 235);
-  height: 130px;
+  min-height: 120px;
   @include flex-layout-row;
 
   @media (min-width: $tabletPortrait) {
-    height: 0px;
     border-right: 1px solid black;
-    @include flex-center;
+    // @include flex-center;
   }
 }

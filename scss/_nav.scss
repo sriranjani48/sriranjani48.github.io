@@ -1,27 +1,17 @@
 // Main Navigation styles
 nav {
+  $height: 40px;
   height: 0;
   overflow: hidden;
   width: calc(100% + 60px);
+  background-color: rgb(201, 201, 201);
 
-  background-color: rgb(163, 163, 163);
-  // position: fixed;
-  // top: 15%;
-  // left: 0;
-  // width: 100%;
-  //margin: 0 auto;
-  // transform: scale(0);
-  //background-color: rgb(235, 235, 235);
-}
-nav.activated {
-  transition: height 0.3s ease;
-}
-nav {
-  $height: 40px;
+  .activated {
+    transition: all 0.3s ease;
+  }
   .show & {
-    // transform: scale(1);
-    margin-top: 30px;
-    height: 500px;
+    margin-top: 80px;
+    height: 450px;
   }
   ul {
     @include flex-layout-row;

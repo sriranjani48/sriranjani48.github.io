@@ -47,25 +47,18 @@ html {
 }
 
 header {
-  padding: 15px 30px;
-  background-color: #ebebeb;
-  height: 130px;
+  min-height: 120px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 @media (min-width: 56.25em) {
   header {
-    height: 0px;
     border-right: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 }
 
-svg {
+header svg {
   height: 80px;
   width: 300px;
   position: absolute;
@@ -73,7 +66,7 @@ svg {
   left: 5%;
   z-index: 1;
 }
-svg .svg-logo {
+header svg .svg-logo {
   fill: black;
   font-variant: small-caps;
   font-family: "Phosphate";
@@ -81,12 +74,12 @@ svg .svg-logo {
   font-style: italic;
 }
 @media (min-width: 56.25em) {
-  svg {
+  header svg {
     top: 10%;
     left: 2.5%;
     width: 600px;
   }
-  svg .svg-logo {
+  header svg .svg-logo {
     font-size: 4em;
   }
 }
@@ -95,16 +88,14 @@ nav {
   height: 0;
   overflow: hidden;
   width: calc(100% + 60px);
-  background-color: #a3a3a3;
+  background-color: #c9c9c9;
 }
-
-nav.activated {
-  transition: height 0.3s ease;
+nav .activated {
+  transition: all 0.3s ease;
 }
-
 .show nav {
-  margin-top: 30px;
-  height: 500px;
+  margin-top: 80px;
+  height: 450px;
 }
 nav ul {
   display: flex;
@@ -184,6 +175,7 @@ nav a {
   position: absolute;
   top: 6%;
   right: 10%;
+  z-index: 99999;
 }
 .menu-btn .button-content {
   height: 24px;
@@ -269,12 +261,12 @@ article {
 
 @media (min-width: 56.25em) {
   section {
-    margin-left: 200px;
+    margin-left: 180px;
     padding: 2px 16px;
   }
 
   article {
-    margin-left: 160px;
+    margin-left: 150px;
     padding: 15px 30px;
     display: flex;
     justify-content: center;
@@ -308,9 +300,10 @@ article {
   text-align: center;
   font-size: 1.8em;
   padding: 30px;
-  position: absolute;
+  position: relative;
   top: 16%;
   left: 53%;
+  margin-top: 50px;
 }
 .projects .row-01,
 .projects .row-02,
@@ -319,8 +312,8 @@ article {
   margin: 0 auto;
 }
 .projects .project-article {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 120px;
+  margin-bottom: 130px;
   max-width: 100%;
   border-radius: 20px;
   height: 350px;
