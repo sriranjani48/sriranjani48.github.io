@@ -2,7 +2,7 @@ header {
   svg {
     height: 80px;
     width: 300px;
-    position: fixed;
+    position: absolute;
     top: 2%;
     left: 5%;
     z-index: 1;
@@ -16,6 +16,7 @@ header {
     }
 
     @media (min-width: $tabletPortrait) {
+      position: fixed;
       top: 10%;
       left: 1%;
       width: 550px;

@@ -1,30 +1,49 @@
 .single-project {
-  hr {
-    max-width: 180px;
-    position: relative;
-    top: -30px;
-    height: 20px;
-    background-color: rgba(139, 139, 139, 0.5);
+  article {
+    display: block;
   }
+
   h1 {
     text-align: center;
     font-size: 2.5em;
     color: black;
   }
   h2 {
-    text-align: center;
-    font-size: 1.6em;
+    text-align: left;
+    font-size: 1.4em;
     color: black;
   }
 
   p {
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1em;
+    text-align: left;
   }
   ins {
     color: grey;
   }
+  button {
+    a {
+      color: black;
+    }
+    padding: 20px;
+    font-size: 1.3em;
+  }
+
+  .img {
+    @include flex-center;
+    margin-bottom: 20px;
+    img {
+      align-content: center;
+      max-width: 50%;
+    }
+    p {
+      text-align: center;
+      font-size: 0.8em;
+      color: rgb(71, 71, 71);
+    }
+  }
 }
+
 .project-links {
   font-size: 1.3em;
   text-align: center;
@@ -47,26 +66,6 @@
 }
 
 @media (min-width: $tabletPortrait) {
-  .single-project {
-    .screen-images {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      .img {
-        border: 1px solid black;
-        margin-bottom: 20px;
-        img {
-          // border: 1px solid black;
-          max-width: 80%;
-        }
-        p {
-          font-size: 1em;
-          color: rgb(71, 71, 71);
-        }
-      }
-    }
-  }
-
   .project-links {
     a {
       font-size: 1.2em;

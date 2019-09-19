@@ -61,7 +61,7 @@ header {
 header svg {
   height: 80px;
   width: 300px;
-  position: fixed;
+  position: absolute;
   top: 2%;
   left: 5%;
   z-index: 1;
@@ -75,6 +75,7 @@ header svg .svg-logo {
 }
 @media (min-width: 56.25em) {
   header svg {
+    position: fixed;
     top: 10%;
     left: 1%;
     width: 550px;
@@ -379,12 +380,8 @@ article {
   }
 }
 
-.single-project hr {
-  max-width: 180px;
-  position: relative;
-  top: -30px;
-  height: 20px;
-  background-color: rgba(139, 139, 139, 0.5);
+.single-project article {
+  display: block;
 }
 .single-project h1 {
   text-align: center;
@@ -392,16 +389,39 @@ article {
   color: black;
 }
 .single-project h2 {
-  text-align: center;
-  font-size: 1.6em;
+  text-align: left;
+  font-size: 1.4em;
   color: black;
 }
 .single-project p {
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1em;
+  text-align: left;
 }
 .single-project ins {
   color: grey;
+}
+.single-project button {
+  padding: 20px;
+  font-size: 1.3em;
+}
+.single-project button a {
+  color: black;
+}
+.single-project .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.single-project .img img {
+  align-content: center;
+  max-width: 50%;
+}
+.single-project .img p {
+  text-align: center;
+  font-size: 0.8em;
+  color: #474747;
 }
 
 .project-links {
@@ -423,23 +443,6 @@ article {
   }
 }
 @media (min-width: 56.25em) {
-  .single-project .screen-images {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  .single-project .screen-images .img {
-    border: 1px solid black;
-    margin-bottom: 20px;
-  }
-  .single-project .screen-images .img img {
-    max-width: 80%;
-  }
-  .single-project .screen-images .img p {
-    font-size: 1em;
-    color: #474747;
-  }
-
   .project-links a {
     font-size: 1.2em;
   }
