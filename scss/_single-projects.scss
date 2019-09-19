@@ -1,8 +1,28 @@
 .single-project {
+  hr {
+    max-width: 180px;
+    position: relative;
+    top: -30px;
+    height: 20px;
+    background-color: rgba(139, 139, 139, 0.5);
+  }
   h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     color: black;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.6em;
+    color: black;
+  }
+
+  p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  ins {
+    color: grey;
   }
 }
 .project-links {
@@ -33,9 +53,15 @@
       flex-direction: column;
       padding: 20px;
       .img {
-        flex: 50%;
+        border: 1px solid black;
+        margin-bottom: 20px;
         img {
-          width: 50%;
+          // border: 1px solid black;
+          max-width: 80%;
+        }
+        p {
+          font-size: 1em;
+          color: rgb(71, 71, 71);
         }
       }
     }

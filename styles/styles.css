@@ -61,7 +61,7 @@ header {
 header svg {
   height: 80px;
   width: 300px;
-  position: absolute;
+  position: fixed;
   top: 2%;
   left: 5%;
   z-index: 1;
@@ -76,8 +76,8 @@ header svg .svg-logo {
 @media (min-width: 56.25em) {
   header svg {
     top: 10%;
-    left: 2.5%;
-    width: 600px;
+    left: 1%;
+    width: 550px;
   }
   header svg .svg-logo {
     font-size: 4em;
@@ -133,7 +133,7 @@ nav a {
     height: 100%;
     top: 0;
     left: 0;
-    max-width: 350px;
+    max-width: 300px;
     margin: 0 auto;
     transform: scale(1);
   }
@@ -147,7 +147,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     outline: none;
-    margin-top: 350px;
+    margin-top: 250px;
   }
   nav li {
     line-height: 40px;
@@ -379,10 +379,29 @@ article {
   }
 }
 
+.single-project hr {
+  max-width: 180px;
+  position: relative;
+  top: -30px;
+  height: 20px;
+  background-color: rgba(139, 139, 139, 0.5);
+}
 .single-project h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   color: black;
+}
+.single-project h2 {
+  text-align: center;
+  font-size: 1.6em;
+  color: black;
+}
+.single-project p {
+  font-size: 1.5em;
+  text-align: center;
+}
+.single-project ins {
+  color: grey;
 }
 
 .project-links {
@@ -410,10 +429,15 @@ article {
     padding: 20px;
   }
   .single-project .screen-images .img {
-    flex: 50%;
+    border: 1px solid black;
+    margin-bottom: 20px;
   }
   .single-project .screen-images .img img {
-    width: 50%;
+    max-width: 80%;
+  }
+  .single-project .screen-images .img p {
+    font-size: 1em;
+    color: #474747;
   }
 
   .project-links a {
