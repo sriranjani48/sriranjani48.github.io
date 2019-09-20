@@ -94,3 +94,10 @@ node_modules/
 *.swp
 *.vi
 *~
+
+
+# Ignore compiled CSS from repository
+
+styles/
+styles/*.css
+styles/*.map
