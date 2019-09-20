@@ -17,6 +17,12 @@
       font-size: 1.5em;
       border-radius: 15px;
       padding: $padding/2;
+      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+    input:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
   }
 }
