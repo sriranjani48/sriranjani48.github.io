@@ -141,8 +141,10 @@
     .project-description {
       div {
         img {
+          height: 80px;
           align-content: center;
-          width: 30%;
+          max-width: 100%;
+          object-fit: contain;
         }
       }
     }
