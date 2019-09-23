@@ -22,7 +22,8 @@ p {
 
 button,
 a,
-input {
+input,
+video {
   margin: 0;
   padding: 0;
   outline: none;
@@ -387,8 +388,17 @@ article {
   }
 }
 
+.single-project {
+  padding: 30px;
+}
 .single-project article {
   display: block;
+}
+.single-project h1,
+.single-project h2,
+.single-project h3,
+.single-project p {
+  padding: 15px;
 }
 .single-project h1 {
   text-align: center;
@@ -399,6 +409,10 @@ article {
   text-align: left;
   font-size: 1.4em;
   color: black;
+}
+.single-project h3 {
+  font-size: 1em;
+  text-align: center;
 }
 .single-project p {
   font-size: 1em;
@@ -414,7 +428,7 @@ article {
   color: black;
   border-radius: 10px;
   padding: 20px;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .single-project button a {
   color: black;
@@ -422,7 +436,19 @@ article {
 .single-project button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
-.single-project .img {
+.single-project video {
+  width: 100%;
+  height: auto;
+}
+.single-project .about {
+  margin: 0 auto;
+}
+.single-project .project-description div img {
+  align-content: center;
+  width: 50%;
+}
+.single-project .img,
+.single-project .video {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
   transition: 0.6s;
   padding: 15px;
@@ -435,11 +461,13 @@ article {
   border: 0.5px solid #ebebeb;
   background-color: #ebebeb;
 }
-.single-project .img img {
+.single-project .img img,
+.single-project .video img {
   align-content: center;
-  width: 100%;
+  max-width: 100%;
 }
-.single-project .img p {
+.single-project .img p,
+.single-project .video p {
   margin-bottom: 30px;
   text-align: center;
   font-size: 0.8em;
@@ -463,13 +491,16 @@ article {
 }
 
 @media (min-width: 41.875em) {
-  .project-links a:nth-child(2) {
+  .single-project .project-links a:nth-child(2) {
     margin-left: 300px;
   }
 }
 @media (min-width: 56.25em) {
-  .img img {
-    max-width: 50%;
+  .single-project h1 {
+    margin-left: 100px;
+  }
+  .single-project .img img {
+    width: 60%;
   }
 
   .project-links a {
@@ -480,6 +511,11 @@ article {
   }
 }
 @media (min-width: 78.125em) {
+  .single-project .project-description div img {
+    align-content: center;
+    width: 30%;
+  }
+
   .project-links a {
     font-size: 1.5em;
   }
