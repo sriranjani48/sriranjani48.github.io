@@ -95,9 +95,3 @@ node_modules/
 *.vi
 *~
 
-
-# Ignore compiled CSS from repository
-
-styles/
-styles/*.css
-styles/*.map
