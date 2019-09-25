@@ -92,6 +92,6 @@ node_modules/
 *.rej
 *.swo
 *.swp
-*.vi
+*.vigit 
 *~
 
