@@ -247,7 +247,7 @@ main {
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-height: 73vh;
+  min-height: 70vh;
 }
 
 section {
@@ -287,6 +287,9 @@ article {
   margin-bottom: 30px;
 }
 .home-contents .btn-project {
+  position: relative;
+  top: 80%;
+  left: 10%;
   padding: 30px;
   margin-bottom: 30px;
 }
@@ -300,6 +303,21 @@ article {
 }
 .home-contents .btn-project input:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 41.875em) {
+  .home-contents .btn-project {
+    position: relative;
+    top: 70%;
+    left: 30%;
+  }
+}
+@media (min-width: 56.25em) {
+  .home-contents .btn-project {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .projects .section-title {
@@ -527,9 +545,8 @@ article {
 }
 footer {
   margin-top: 36px;
-  border-top: 1px solid #000;
   background-color: #ebebeb;
-  min-height: 20vh;
+  min-height: 14vh;
   text-align: center;
 }
 

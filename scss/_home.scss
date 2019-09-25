@@ -9,8 +9,18 @@
     font-size: 1.5em;
     padding: $padding;
     margin-bottom: 30px;
+
+    ul {
+      //list-style: none;
+      li {
+      }
+    }
   }
   .btn-project {
+    position: relative;
+    top: 80%;
+    left: 10%;
+
     padding: $padding;
     margin-bottom: 30px;
     input[type="submit"] {
@@ -23,6 +33,23 @@
     }
     input:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @media (min-width: $phoneLandscape) {
+    .btn-project {
+      position: relative;
+      top: 70%;
+      left: 30%;
+    }
+  }
+
+  @media (min-width: $tabletPortrait) {
+    .btn-project {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
