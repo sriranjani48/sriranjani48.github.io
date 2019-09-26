@@ -4,14 +4,14 @@ nav {
   height: 0;
   overflow: hidden;
   width: calc(100% + 60px);
-  background-color: rgb(201, 201, 201);
+  background-color: rgba(201, 201, 201, 0.6);
 
   .activated {
     transition: all 0.3s ease;
   }
   .show & {
     margin-top: 80px;
-    height: 404px;
+    height: 344px;
   }
   ul {
     @include flex-layout-row;
@@ -38,7 +38,7 @@ nav {
     padding: 20px;
     text-decoration: none;
     color: $text-color-dark;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #000000;
   }
 }
 @media (min-width: $tabletPortrait) {

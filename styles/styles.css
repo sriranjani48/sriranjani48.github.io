@@ -85,14 +85,14 @@ nav {
   height: 0;
   overflow: hidden;
   width: calc(100% + 60px);
-  background-color: #c9c9c9;
+  background-color: rgba(201, 201, 201, 0.6);
 }
 nav .activated {
   transition: all 0.3s ease;
 }
 .show nav {
   margin-top: 80px;
-  height: 404px;
+  height: 344px;
 }
 nav ul {
   display: flex;
@@ -120,7 +120,7 @@ nav a {
   padding: 20px;
   text-decoration: none;
   color: black;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #000000;
 }
 
 @media (min-width: 56.25em) {
