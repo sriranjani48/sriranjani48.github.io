@@ -26,7 +26,6 @@ nav {
   li {
     text-align: center;
     color: $text-color-dark;
-    margin-top: 20px;
     padding: 20px;
     width: 100%;
     #{$link-hover-selector} {
@@ -34,8 +33,8 @@ nav {
     }
   }
   a {
+    font-size: 1.3em;
     display: block;
-    font-size: 2em;
     padding: 20px;
     text-decoration: none;
     color: $text-color-dark;
@@ -51,7 +50,7 @@ nav {
     $height: 40px;
     top: 0;
     left: 0;
-    max-width: 300px;
+    max-width: 250px;
     margin: 0 auto;
     transform: scale(1);
 
@@ -62,20 +61,15 @@ nav {
       text-align: center;
       text-decoration: none;
       outline: none;
-      margin-top: 250px;
+      margin-top: 200px;
     }
     li {
       line-height: $height;
       flex: 1;
       cursor: pointer;
-      padding: $padding;
-      margin-bottom: $padding;
-    }
-    li:nth-child(3) {
-      margin-bottom: 80px;
     }
     a {
-      font-size: 2em;
+      font-size: 1.5em;
     }
   }
 }

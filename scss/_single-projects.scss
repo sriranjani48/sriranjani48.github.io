@@ -18,16 +18,16 @@
   }
   h2 {
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1.8em;
     color: black;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: left;
   }
   ins {
@@ -93,24 +93,22 @@
 }
 
 .project-links {
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
   position: relative;
   bottom: -70%;
+  left: 0%;
 
   a {
     color: $text-color-dark;
   }
   a:nth-child(2) {
-    margin-left: 120px;
+    margin-left: 100px;
   }
-}
-@media (min-width: $phoneLandscape) {
-  .single-project {
-    .project-links {
-      a:nth-child(2) {
-        margin-left: 300px;
-      }
+
+  @media (min-width: $phoneLandscape) {
+    a:nth-child(2) {
+      margin-left: 300px;
     }
   }
 }
@@ -128,11 +126,12 @@
   }
 
   .project-links {
+    left: 8%;
     a {
-      font-size: 1.2em;
+      font-size: 1em;
     }
     a:nth-child(2) {
-      margin-left: 100px;
+      margin-left: 300px;
     }
   }
 }
@@ -151,10 +150,10 @@
   }
   .project-links {
     a {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
     a:nth-child(2) {
-      margin-left: 350px;
+      margin-left: 400px;
     }
   }
 }

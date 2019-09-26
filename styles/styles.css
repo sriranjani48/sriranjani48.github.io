@@ -27,6 +27,7 @@ video {
   margin: 0;
   padding: 0;
   outline: none;
+  cursor: pointer;
 }
 
 a {
@@ -53,15 +54,10 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (min-width: 56.25em) {
-  header {
-    border-right: 1px solid black;
-  }
-}
 
 header svg {
   height: 80px;
-  width: 300px;
+  width: 200px;
   position: absolute;
   top: 2%;
   left: 5%;
@@ -78,10 +74,10 @@ header svg .svg-logo {
   header svg {
     position: fixed;
     top: 10%;
-    left: 1%;
+    left: 4%;
   }
   header svg .svg-logo {
-    font-size: 4em;
+    font-size: 2.6em;
   }
 }
 
@@ -112,7 +108,6 @@ nav ul {
 nav li {
   text-align: center;
   color: black;
-  margin-top: 20px;
   padding: 20px;
   width: 100%;
 }
@@ -120,8 +115,8 @@ nav li:hover, nav li:focus, nav li:active {
   border: none;
 }
 nav a {
+  font-size: 1.3em;
   display: block;
-  font-size: 2em;
   padding: 20px;
   text-decoration: none;
   color: black;
@@ -136,7 +131,7 @@ nav a {
     height: 100%;
     top: 0;
     left: 0;
-    max-width: 300px;
+    max-width: 250px;
     margin: 0 auto;
     transform: scale(1);
   }
@@ -150,20 +145,15 @@ nav a {
     text-align: center;
     text-decoration: none;
     outline: none;
-    margin-top: 250px;
+    margin-top: 200px;
   }
   nav li {
     line-height: 40px;
     flex: 1;
     cursor: pointer;
-    padding: 30px;
-    margin-bottom: 30px;
-  }
-  nav li:nth-child(3) {
-    margin-bottom: 80px;
   }
   nav a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 .menu-btn {
@@ -272,57 +262,37 @@ article {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.3em;
+    font-size: 0.8em;
   }
 }
 .home-contents .about-me {
   text-align: center;
-  font-size: 2.4em;
+  font-size: 1.4em;
   padding: 30px;
   margin-bottom: 30px;
 }
 .home-contents .skills {
-  font-size: 1.5em;
+  font-size: 1.1em;
   padding: 30px;
   margin-bottom: 30px;
 }
-.home-contents .btn-project {
-  position: relative;
-  top: 80%;
-  left: 10%;
-  padding: 30px;
-  margin-bottom: 30px;
+.home-contents .skills ul {
+  list-style: none;
 }
-.home-contents .btn-project input[type=submit] {
-  font-size: 1.5em;
+.home-contents button {
+  font-size: 1em;
   border-radius: 15px;
   padding: 15px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   border-radius: 10px;
 }
-.home-contents .btn-project input:hover {
+.home-contents button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 41.875em) {
-  .home-contents .btn-project {
-    position: relative;
-    top: 70%;
-    left: 30%;
-  }
-}
-@media (min-width: 56.25em) {
-  .home-contents .btn-project {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 .projects .section-title {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.6em;
   padding: 30px;
   position: relative;
   top: 16%;
@@ -366,7 +336,7 @@ article {
   max-width: 100%;
 }
 .projects .box p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   position: absolute;
   top: 320px;
   right: -35px;
@@ -396,7 +366,7 @@ article {
     margin-top: 50px;
     margin-bottom: 100px;
     width: 450px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .projects .box img {
     object-fit: cover;
@@ -425,15 +395,15 @@ article {
 }
 .single-project h2 {
   text-align: left;
-  font-size: 1.4em;
+  font-size: 1.8em;
   color: black;
 }
 .single-project h3 {
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: center;
 }
 .single-project p {
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: left;
 }
 .single-project ins {
@@ -496,23 +466,24 @@ article {
 }
 
 .project-links {
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
   position: relative;
   bottom: -70%;
+  left: 0%;
 }
 .project-links a {
   color: black;
 }
 .project-links a:nth-child(2) {
-  margin-left: 120px;
+  margin-left: 100px;
 }
-
 @media (min-width: 41.875em) {
-  .single-project .project-links a:nth-child(2) {
+  .project-links a:nth-child(2) {
     margin-left: 300px;
   }
 }
+
 @media (min-width: 56.25em) {
   .single-project h1 {
     margin-left: 100px;
@@ -521,11 +492,14 @@ article {
     width: 60%;
   }
 
+  .project-links {
+    left: 8%;
+  }
   .project-links a {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .project-links a:nth-child(2) {
-    margin-left: 100px;
+    margin-left: 300px;
   }
 }
 @media (min-width: 78.125em) {
@@ -537,10 +511,10 @@ article {
   }
 
   .project-links a {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .project-links a:nth-child(2) {
-    margin-left: 350px;
+    margin-left: 400px;
   }
 }
 footer {
@@ -548,6 +522,13 @@ footer {
   background-color: #ebebeb;
   min-height: 14vh;
   text-align: center;
+}
+footer h1 {
+  font-size: 1.2em;
+}
+footer h3,
+footer a {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

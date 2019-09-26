@@ -1,55 +1,37 @@
 .home-contents {
   .about-me {
     text-align: center;
-    font-size: 2.4em;
+    font-size: 1.4em;
     padding: $padding;
     margin-bottom: 30px;
   }
   .skills {
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding: $padding;
     margin-bottom: 30px;
 
     ul {
-      //list-style: none;
+      list-style: none;
       li {
       }
     }
   }
-  .btn-project {
-    position: relative;
-    top: 80%;
-    left: 10%;
 
-    padding: $padding;
-    margin-bottom: 30px;
-    input[type="submit"] {
-      font-size: 1.5em;
-      border-radius: 15px;
-      padding: $padding/2;
-      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
-      transition: 0.3s;
-      border-radius: 10px;
-    }
-    input:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
+  button {
+    font-size: 1em;
+    border-radius: 15px;
+    padding: $padding/2;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
 
   @media (min-width: $phoneLandscape) {
-    .btn-project {
-      position: relative;
-      top: 70%;
-      left: 30%;
-    }
   }
 
   @media (min-width: $tabletPortrait) {
-    .btn-project {
-      position: absolute;
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
   }
 }

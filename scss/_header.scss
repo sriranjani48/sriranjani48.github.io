@@ -1,9 +1,4 @@
 header {
   min-height: 120px;
   @include flex-layout-row;
-
-  @media (min-width: $tabletPortrait) {
-    border-right: 1px solid black;
-    // @include flex-center;
-  }
 }

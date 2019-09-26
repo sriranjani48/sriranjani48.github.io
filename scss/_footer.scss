@@ -4,4 +4,12 @@ footer {
   background-color: rgb(235, 235, 235);
   min-height: 14vh;
   text-align: center;
+
+  h1 {
+    font-size: 1.2em;
+  }
+  h3,
+  a {
+    font-size: 1em;
+  }
 }
