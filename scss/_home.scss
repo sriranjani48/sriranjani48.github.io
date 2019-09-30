@@ -1,18 +1,27 @@
 .home-contents {
   .about-me {
     text-align: center;
-    font-size: 1.4em;
+    h1 {
+      font-size: 2.5em;
+    }
     padding: $padding;
     margin-bottom: 30px;
   }
   .skills {
-    font-size: 1.1em;
+    h1 {
+      text-align: center;
+      padding: $padding/2;
+      display: inline-block;
+      border-bottom: 2px solid firebrick;
+      font-size: 1.8em;
+    }
     padding: $padding;
     margin-bottom: 30px;
 
     ul {
       list-style: none;
       li {
+        font-size: 1.6em;
       }
     }
   }
@@ -27,6 +36,20 @@
   }
   button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-me {
+    margin-top: 30px;
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+      padding: $padding/2;
+      display: inline-block;
+      border-bottom: 2px solid firebrick;
+    }
+    p {
+      font-size: 1.5em;
+    }
   }
 
   @media (min-width: $phoneLandscape) {

@@ -1,8 +1,10 @@
 .projects {
   .section-title {
+    display: inline-block;
+    border-bottom: 2px solid firebrick;
     text-align: center;
-    font-size: 1.6em;
-    padding: $padding;
+    font-size: 1.8em;
+    padding: $padding/2;
     position: relative;
     top: 16%;
     left: 53%;

@@ -92,7 +92,7 @@ nav .activated {
 }
 .show nav {
   margin-top: 80px;
-  height: 344px;
+  height: 346px;
 }
 nav ul {
   display: flex;
@@ -120,7 +120,7 @@ nav a {
   padding: 20px;
   text-decoration: none;
   color: black;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid firebrick;
 }
 
 @media (min-width: 56.25em) {
@@ -237,7 +237,7 @@ main {
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-height: 70vh;
+  min-height: 85vh;
 }
 
 section {
@@ -267,17 +267,28 @@ article {
 }
 .home-contents .about-me {
   text-align: center;
-  font-size: 1.4em;
   padding: 30px;
   margin-bottom: 30px;
 }
+.home-contents .about-me h1 {
+  font-size: 2.5em;
+}
 .home-contents .skills {
-  font-size: 1.1em;
   padding: 30px;
   margin-bottom: 30px;
+}
+.home-contents .skills h1 {
+  text-align: center;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 2px solid firebrick;
+  font-size: 1.8em;
 }
 .home-contents .skills ul {
   list-style: none;
+}
+.home-contents .skills ul li {
+  font-size: 1.6em;
 }
 .home-contents button {
   font-size: 1em;
@@ -290,10 +301,25 @@ article {
 .home-contents button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.projects .section-title {
+.home-contents .contact-me {
+  margin-top: 30px;
+}
+.home-contents .contact-me h1 {
   text-align: center;
-  font-size: 1.6em;
-  padding: 30px;
+  font-size: 1.8em;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 2px solid firebrick;
+}
+.home-contents .contact-me p {
+  font-size: 1.5em;
+}
+.projects .section-title {
+  display: inline-block;
+  border-bottom: 2px solid firebrick;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 15px;
   position: relative;
   top: 16%;
   left: 53%;
@@ -376,6 +402,43 @@ article {
   }
 }
 
+.about-contents {
+  position: relative;
+}
+.about-contents h1 {
+  text-align: center;
+  font-size: 1.8em;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 2px solid firebrick;
+  margin-bottom: 20px;
+}
+.about-contents p {
+  font-size: 1.5em;
+}
+.about-contents table caption {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+.about-contents table th,
+.about-contents table td {
+  text-align: left;
+  font-size: 1.3em;
+}
+.about-contents button {
+  font-size: 1em;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.about-contents button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .single-project {
   padding: 30px;
 }
@@ -390,6 +453,9 @@ article {
 }
 .single-project h1 {
   text-align: center;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 2px solid firebrick;
   font-size: 2.5em;
   color: black;
 }
@@ -518,13 +584,13 @@ article {
   }
 }
 footer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 36px;
   background-color: #ebebeb;
-  min-height: 14vh;
+  min-height: 20vh;
   text-align: center;
-}
-footer h1 {
-  font-size: 1.2em;
 }
 footer h3,
 footer a {

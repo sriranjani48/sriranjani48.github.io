@@ -13,6 +13,9 @@
 
   h1 {
     text-align: center;
+    padding: $padding/2;
+    display: inline-block;
+    border-bottom: 2px solid firebrick;
     font-size: 2.5em;
     color: black;
   }
