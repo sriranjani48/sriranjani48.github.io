@@ -120,7 +120,7 @@ nav a {
   padding: 20px;
   text-decoration: none;
   color: black;
-  border-bottom: 2px solid firebrick;
+  border-bottom: 2px solid rgba(178, 34, 34, 0.562);
 }
 
 @media (min-width: 56.25em) {
@@ -403,18 +403,22 @@ article {
 }
 
 .about-contents {
+  margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .about-contents h1 {
-  text-align: center;
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding: 15px;
   display: inline-block;
   border-bottom: 2px solid firebrick;
   margin-bottom: 20px;
 }
 .about-contents p {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .about-contents table caption {
   margin-top: 50px;
@@ -425,7 +429,7 @@ article {
 .about-contents table th,
 .about-contents table td {
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .about-contents button {
   font-size: 1em;
@@ -437,6 +441,19 @@ article {
 }
 .about-contents button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 56.25em) {
+  .about-contents h1 {
+    font-size: 1.8em;
+  }
+  .about-contents p {
+    font-size: 1.4em;
+  }
+  .about-contents table th,
+.about-contents table td {
+    text-align: left;
+    font-size: 1.3em;
+  }
 }
 
 .single-project {
