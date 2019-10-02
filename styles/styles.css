@@ -46,6 +46,8 @@ html {
   background-color: #ebebeb;
   margin: 0 auto;
   max-width: 100%;
+  border: 20px solid white;
+  min-height: 100vh;
 }
 
 header {
@@ -54,14 +56,12 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 header svg {
   height: 80px;
   width: 200px;
   position: absolute;
   top: 2%;
   left: 5%;
-  z-index: 1;
 }
 header svg .svg-logo {
   fill: black;
@@ -72,12 +72,12 @@ header svg .svg-logo {
 }
 @media (min-width: 56.25em) {
   header svg {
-    position: fixed;
-    top: 10%;
+    position: absolute;
+    top: 5%;
     left: 4%;
   }
   header svg .svg-logo {
-    font-size: 2.6em;
+    font-size: 3em;
   }
 }
 
@@ -85,7 +85,6 @@ nav {
   height: 0;
   overflow: hidden;
   width: calc(100% + 60px);
-  background-color: rgba(201, 201, 201, 0.6);
 }
 nav .activated {
   transition: all 0.3s ease;
@@ -111,49 +110,46 @@ nav li {
   padding: 20px;
   width: 100%;
 }
-nav li:hover, nav li:focus, nav li:active {
-  border: none;
-}
 nav a {
   font-size: 1.3em;
   display: block;
   padding: 20px;
   text-decoration: none;
   color: black;
-  border-bottom: 2px solid rgba(178, 34, 34, 0.562);
 }
 
 @media (min-width: 56.25em) {
   nav {
-    position: fixed;
-    top: 15%;
-    left: 0;
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: auto;
     top: 0;
     left: 0;
-    max-width: 250px;
-    margin: 0 auto;
+    width: auto;
     transform: scale(1);
   }
   nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     list-style: none;
     color: black;
     text-align: center;
     text-decoration: none;
     outline: none;
-    margin-top: 200px;
   }
   nav li {
+    padding: 20px;
     line-height: 40px;
     flex: 1;
     cursor: pointer;
   }
   nav a {
+    width: 150px;
     font-size: 1.5em;
+  }
+  nav a:hover, nav a:focus, nav a:active {
+    height: auto;
+    line-height: 40px;
   }
 }
 .menu-btn {
@@ -237,27 +233,16 @@ main {
   max-width: 100%;
   margin: 0 auto;
   height: 100%;
-  min-height: 85vh;
 }
-
-section {
+main section {
   margin-left: 0;
   padding: 15px;
 }
-
-article {
+main article {
   padding: 15px;
 }
-
 @media (min-width: 56.25em) {
-  section {
-    margin-left: 180px;
-    padding: 2px 16px;
-  }
-
-  article {
-    margin-left: 150px;
-    padding: 15px 30px;
+  main article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,6 +250,7 @@ article {
     font-size: 0.8em;
   }
 }
+
 .home-contents .about-me {
   text-align: center;
   padding: 30px;
@@ -389,7 +375,6 @@ article {
     justify-content: space-evenly;
   }
   .projects .project-article {
-    margin-top: 50px;
     margin-bottom: 100px;
     width: 450px;
     font-size: 0.8em;
@@ -403,7 +388,6 @@ article {
 }
 
 .about-contents {
-  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: center;

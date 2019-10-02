@@ -4,7 +4,7 @@ nav {
   height: 0;
   overflow: hidden;
   width: calc(100% + 60px);
-  background-color: rgba(201, 201, 201, 0.6);
+  //   background-color: rgba(201, 201, 201, 0.6);
 
   .activated {
     transition: all 0.3s ease;
@@ -28,9 +28,6 @@ nav {
     color: $text-color-dark;
     padding: 20px;
     width: 100%;
-    #{$link-hover-selector} {
-      border: none;
-    }
   }
   a {
     font-size: 1.3em;
@@ -38,40 +35,42 @@ nav {
     padding: 20px;
     text-decoration: none;
     color: $text-color-dark;
-    border-bottom: 2px solid rgba(178, 34, 34, 0.562);
   }
 }
 @media (min-width: $tabletPortrait) {
   nav {
-    position: fixed;
-    top: 15%;
-    left: 0;
-    height: 100%;
+    @include flex-layout-row;
+    overflow: auto;
+
+    height: auto;
     $height: 40px;
     top: 0;
     left: 0;
-    max-width: 250px;
-    margin: 0 auto;
+    width: auto;
+
     transform: scale(1);
-    border-top: 20px solid #fff;
-    border-bottom: 20px solid #fff;
-    border-left: 20px solid #fff;
+
     ul {
-      @include flex-center;
       list-style: none;
       color: black;
       text-align: center;
       text-decoration: none;
       outline: none;
-      margin-top: 200px;
     }
     li {
+      padding: 20px;
       line-height: $height;
       flex: 1;
       cursor: pointer;
     }
     a {
+      width: 150px;
       font-size: 1.5em;
+
+      #{$link-hover-selector} {
+        height: auto;
+        line-height: $height;
+      }
     }
   }
 }

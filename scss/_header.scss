@@ -1,4 +1,8 @@
 header {
   min-height: 120px;
   @include flex-layout-row;
+
+  @media (min-width: $tabletPortrait) {
+    // min-height: 10px;
+  }
 }
