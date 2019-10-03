@@ -5,6 +5,7 @@ header {
     position: absolute;
     top: 2%;
     left: 5%;
+    z-index: 1;
 
     .svg-logo {
       fill: black;
@@ -15,9 +16,9 @@ header {
     }
 
     @media (min-width: $tabletPortrait) {
-      position: absolute;
+      position: fixed;
       top: 5%;
-      left: 4%;
+      left: 3%;
       .svg-logo {
         font-size: 3em;
       }

@@ -13,12 +13,12 @@ main {
 
   @media (min-width: $tabletPortrait) {
     section {
-      // margin-left: 180px;
-      // padding: 2px 16px;
+      margin-left: 180px;
+      padding: 2px 16px;
     }
     article {
-      // margin-left: 150px;
-      // padding: $padding/2 $padding;
+      margin-left: 150px;
+      padding: $padding/2 $padding;
       @include flex-center;
       font-size: 0.8em;
     }
