@@ -1,13 +1,11 @@
 .home-contents {
+  // margin-top: 100px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex-center;
   .about-me {
     text-align: center;
     h1 {
-      font-size: 1.8em;
+      font-size: 1.7em;
     }
     padding: $padding;
     margin-bottom: 30px;
@@ -19,7 +17,7 @@
       padding: $padding/2;
       display: inline-block;
       border-bottom: 2px solid firebrick;
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
     padding: $padding;
     margin-bottom: 30px;
@@ -27,14 +25,11 @@
     ul {
       list-style: none;
       li {
-        font-size: 1em;
+        font-size: 1.2em;
       }
     }
   }
   .btn-project {
-    // position: relative;
-    // top: 50%;
-    // left: 50%;
     button {
       font-size: 1em;
       border-radius: 15px;
@@ -50,36 +45,18 @@
     }
   }
 
-  .contact-me {
-    text-align: center;
-    h1 {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 1.3em;
-      padding: $padding/2;
-      display: inline-block;
-      border-bottom: 2px solid firebrick;
-    }
-    p {
-      font-size: 1em;
-    }
-  }
-
-  @media (min-width: $phoneLandscape) {
-  }
-
   @media (min-width: $tabletPortrait) {
     .about-me {
       h1 {
-        font-size: 3em;
+        font-size: 2.8em;
       }
     }
     .skills {
       h1 {
-        font-size: 2em;
+        font-size: 1.8em;
       }
       p {
-        font-size: 1.3em;
+        font-size: 1.2em;
       }
     }
     .btn-project {
@@ -87,14 +64,6 @@
         position: relative;
 
         // transform: translate(-50%, -50%);
-      }
-    }
-    .contact-me {
-      h1 {
-        font-size: 1.6em;
-      }
-      p {
-        font-size: 1.3em;
       }
     }
   }

@@ -1,19 +1,42 @@
 footer {
-  position: absolute;
-  //top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 36px;
-  // border-top: 3px solid #000;
-  // border-top-left-radius: 50% 50%;
-  // border-top-right-radius: 50% 50%;
+  min-height: 15vh;
 
-  background-color: rgb(235, 235, 235);
-  min-height: 20vh;
   text-align: center;
+  @include flex-center;
+  .contact-me {
+    margin-top: 36px;
+    text-align: center;
+    h1 {
+      text-align: center;
+      font-size: 1em;
+      padding: $padding/2;
+      display: inline-block;
+      border-bottom: 2px solid firebrick;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
 
   h3,
   a {
     font-size: 1em;
+  }
+
+  @media (min-width: $tabletPortrait) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(20%);
+
+    .contact-me {
+      h1 {
+        font-size: 1.2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
   }
 }

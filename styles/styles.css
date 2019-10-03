@@ -52,7 +52,7 @@ html {
 
 header {
   max-width: 100%;
-  min-height: 120px;
+  min-height: 110px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -77,6 +77,14 @@ header svg .svg-logo {
     position: fixed;
     top: 5%;
     left: 3%;
+  }
+  header svg .svg-logo {
+    font-size: 3em;
+  }
+}
+@media (min-width: 78.125em) {
+  header svg {
+    left: 1.5%;
   }
   header svg .svg-logo {
     font-size: 3em;
@@ -128,17 +136,12 @@ nav a {
 @media (min-width: 56.25em) {
   nav {
     position: fixed;
-    top: 15%;
-    left: 0;
     height: 100%;
     top: 0;
     left: 0;
     max-width: 250px;
     margin: 0 auto;
     transform: scale(1);
-    border-top: 20px solid #fff;
-    border-bottom: 20px solid #fff;
-    border-left: 20px solid #fff;
   }
   nav ul {
     display: flex;
@@ -150,7 +153,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     outline: none;
-    margin-top: 200px;
+    margin-top: 180px;
   }
   nav li {
     line-height: 40px;
@@ -278,7 +281,7 @@ main article {
   margin-bottom: 30px;
 }
 .home-contents .about-me h1 {
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 .home-contents .skills {
   text-align: center;
@@ -290,13 +293,13 @@ main article {
   padding: 15px;
   display: inline-block;
   border-bottom: 2px solid firebrick;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .home-contents .skills ul {
   list-style: none;
 }
 .home-contents .skills ul li {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .home-contents .btn-project button {
   font-size: 1em;
@@ -310,38 +313,18 @@ main article {
 .home-contents .btn-project button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.home-contents .contact-me {
-  text-align: center;
-}
-.home-contents .contact-me h1 {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 1.3em;
-  padding: 15px;
-  display: inline-block;
-  border-bottom: 2px solid firebrick;
-}
-.home-contents .contact-me p {
-  font-size: 1em;
-}
 @media (min-width: 56.25em) {
   .home-contents .about-me h1 {
-    font-size: 3em;
+    font-size: 2.8em;
   }
   .home-contents .skills h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .home-contents .skills p {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .home-contents .btn-project button {
     position: relative;
-  }
-  .home-contents .contact-me h1 {
-    font-size: 1.6em;
-  }
-  .home-contents .contact-me p {
-    font-size: 1.3em;
   }
 }
 
@@ -632,17 +615,44 @@ main article {
   }
 }
 footer {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 36px;
-  background-color: #ebebeb;
-  min-height: 20vh;
+  min-height: 15vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .contact-me {
+  margin-top: 36px;
+  text-align: center;
+}
+footer .contact-me h1 {
+  text-align: center;
+  font-size: 1em;
+  padding: 15px;
+  display: inline-block;
+  border-bottom: 2px solid firebrick;
+}
+footer .contact-me p {
+  font-size: 1em;
 }
 footer h3,
 footer a {
   font-size: 1em;
+}
+@media (min-width: 56.25em) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(20%);
+  }
+  footer .contact-me h1 {
+    font-size: 1.2em;
+  }
+  footer .contact-me p {
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

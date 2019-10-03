@@ -23,5 +23,11 @@ header {
         font-size: 3em;
       }
     }
+    @media (min-width: $desktopMedium) {
+      left: 1.5%;
+      .svg-logo {
+        font-size: 3em;
+      }
+    }
   }
 }
