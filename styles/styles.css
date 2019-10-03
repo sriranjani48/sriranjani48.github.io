@@ -46,6 +46,7 @@ html {
   background-color: #ebebeb;
   margin: 0 auto;
   max-width: 100%;
+  height: auto;
   min-height: 100vh;
 }
 
@@ -240,7 +241,6 @@ nav a {
 main {
   max-width: 100%;
   margin: 0 auto;
-  height: 100%;
 }
 main section {
   margin-left: 0;
@@ -265,6 +265,13 @@ main article {
   }
 }
 
+.home-contents {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .home-contents .about-me {
   text-align: center;
   padding: 30px;
@@ -291,24 +298,20 @@ main article {
 .home-contents .skills ul li {
   font-size: 1em;
 }
-.home-contents button {
+.home-contents .btn-project button {
   font-size: 1em;
   border-radius: 15px;
   padding: 15px;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
-  border-radius: 10px;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: rgba(178, 34, 34, 0.9);
+  color: white;
 }
-.home-contents button:hover {
+.home-contents .btn-project button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .home-contents .contact-me {
   text-align: center;
-  margin-top: 30px;
 }
 .home-contents .contact-me h1 {
   margin-top: 30px;
@@ -330,6 +333,9 @@ main article {
   }
   .home-contents .skills p {
     font-size: 1.3em;
+  }
+  .home-contents .btn-project button {
+    position: relative;
   }
   .home-contents .contact-me h1 {
     font-size: 1.6em;
@@ -603,9 +609,6 @@ main article {
     width: 60%;
   }
 
-  .project-links {
-    left: 8%;
-  }
   .project-links a {
     font-size: 1em;
   }
