@@ -1,6 +1,6 @@
 .home-contents {
-  // margin-top: 100px;
   position: relative;
+
   @include flex-center;
   .about-me {
     text-align: center;
@@ -23,15 +23,28 @@
     margin-bottom: 30px;
 
     ul {
+      margin: 0 auto;
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 50px;
       list-style: none;
       li {
+        margin-top: 30px;
+        i {
+          font-size: 1.2em;
+          margin-right: 10px;
+          border-radius: 50%;
+          border: 1px solid black;
+          padding: 13px;
+        }
         font-size: 1.2em;
       }
     }
   }
   .btn-project {
     button {
-      font-size: 1em;
+      font-size: 1rem;
       border-radius: 15px;
       padding: $padding/2;
       box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
@@ -48,22 +61,30 @@
   @media (min-width: $tabletPortrait) {
     .about-me {
       h1 {
-        font-size: 2.8em;
+        margin-top: 40px;
+        font-size: 3rem;
       }
     }
     .skills {
       h1 {
-        font-size: 1.8em;
+        font-size: 1.8rem;
       }
       p {
-        font-size: 1.2em;
+        font-size: 1.4rem;
+      }
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+        li {
+          i {
+            font-weight: normal;
+            font-size: 1.2rem;
+          }
+        }
       }
     }
     .btn-project {
       button {
         position: relative;
-
-        // transform: translate(-50%, -50%);
       }
     }
   }

@@ -1,8 +1,10 @@
 main {
   max-width: 100%;
   margin: 0 auto;
-  // min-height: 90vh;
+  position: relative;
+
   section {
+    top: 10vh;
     margin-left: 0;
     padding: $padding/2;
   }
@@ -11,13 +13,10 @@ main {
   }
 
   @media (min-width: $tabletPortrait) {
-    // margin-top: 150px;
     section {
-      margin-left: 180px;
       padding: 2px 16px;
     }
     article {
-      margin-left: 150px;
       padding: $padding/2 $padding;
       @include flex-center;
       font-size: 0.8em;

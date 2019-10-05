@@ -4,6 +4,6 @@ header {
   @include flex-layout-row;
 
   @media (min-width: $tabletPortrait) {
-    // min-height: 10px;
+    line-height: 96vh;
   }
 }

@@ -39,13 +39,13 @@ nav {
 }
 @media (min-width: $tabletPortrait) {
   nav {
+    position: fixed;
+    top: 3%;
+    right: 0;
     @include flex-layout-row;
     overflow: auto;
-
     height: auto;
     $height: 40px;
-    top: 0;
-    left: 0;
     width: auto;
 
     transform: scale(1);
