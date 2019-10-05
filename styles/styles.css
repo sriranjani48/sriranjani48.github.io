@@ -48,7 +48,7 @@ html {
   max-width: 100%;
   border: 20px solid white;
   height: auto;
-  min-height: 100vh;
+  min-height: 140vh;
 }
 
 header {
@@ -76,7 +76,7 @@ header svg .svg-logo {
   fill: black;
   font-variant: small-caps;
   font-family: "Phosphate";
-  font-size: 2.8em;
+  font-size: 2.6rem;
   font-style: italic;
 }
 @media (min-width: 56.25em) {
@@ -86,15 +86,7 @@ header svg .svg-logo {
     left: 5.5%;
   }
   header svg .svg-logo {
-    font-size: 3em;
-  }
-}
-@media (min-width: 78.125em) {
-  header svg {
-    left: 2.4%;
-  }
-  header svg .svg-logo {
-    font-size: 3em;
+    font-size: 2.8em;
   }
 }
 
@@ -102,6 +94,7 @@ nav {
   height: 0;
   overflow: hidden;
   width: calc(100% + 60px);
+  z-index: 2;
 }
 nav .activated {
   transition: all 0.3s ease;
@@ -128,7 +121,7 @@ nav li {
   width: 100%;
 }
 nav a {
-  font-size: 1.3em;
+  font-size: 1.2rem;
   display: block;
   padding: 20px;
   text-decoration: none;
@@ -163,7 +156,7 @@ nav a {
   }
   nav a {
     width: 150px;
-    font-size: 1.5em;
+    font-size: 1.4rem;
   }
   nav a:hover, nav a:focus, nav a:active {
     height: auto;
@@ -250,7 +243,7 @@ nav a {
 main {
   max-width: 100%;
   margin: 0 auto;
-  position: relative;
+  min-height: 100vh;
 }
 main section {
   top: 10vh;
@@ -595,7 +588,6 @@ main article {
 .project-links {
   font-size: 1.1em;
   text-align: center;
-  position: relative;
   bottom: -70%;
   left: 0%;
 }
@@ -646,16 +638,15 @@ footer {
   position: relative;
   margin: 0 auto;
   max-width: 100%;
-  min-height: 35vh;
   text-align: center;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 footer .contact-me {
-  margin-top: 36px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -674,9 +665,8 @@ footer .contact-me a .i {
 }
 @media (min-width: 56.25em) {
   footer .contact-me {
-    position: absolute;
-    margin-top: 80px;
-    left: 40%;
+    left: 45%;
+    bottom: 0;
   }
   footer .contact-me a i {
     font-size: 1.8rem;

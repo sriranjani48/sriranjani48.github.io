@@ -11,7 +11,7 @@ header {
       fill: black;
       font-variant: small-caps;
       font-family: "Phosphate";
-      font-size: 2.8em;
+      font-size: 2.6rem;
       font-style: italic;
     }
 
@@ -20,13 +20,7 @@ header {
       top: 5%;
       left: 5.5%;
       .svg-logo {
-        font-size: 3em;
-      }
-    }
-    @media (min-width: $desktopMedium) {
-      left: 2.4%;
-      .svg-logo {
-        font-size: 3em;
+        font-size: 2.8em;
       }
     }
   }

@@ -3,12 +3,12 @@ footer {
   position: relative;
   margin: 0 auto;
   max-width: 100%;
-  min-height: 35vh;
   text-align: center;
-  margin-bottom: 30px;
   @include flex-center;
   .contact-me {
-    margin-top: 36px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
     text-align: center;
     font-size: 1.2rem;
 
@@ -30,10 +30,9 @@ footer {
 
   @media (min-width: $tabletPortrait) {
     .contact-me {
-      position: absolute;
-      margin-top: 80px;
-      left: 40%;
-      // bottom: 0;
+      // position: absolute;
+      left: 45%;
+      bottom: 0;
 
       a {
         i {
