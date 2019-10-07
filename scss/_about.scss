@@ -4,14 +4,14 @@
   .about-article {
     text-align: center;
     h1 {
-      font-size: 1.2em;
+      font-size: 1.6rem;
       padding: $padding/2;
       display: inline-block;
       border-bottom: 2px solid firebrick;
       margin-bottom: 20px;
     }
     p {
-      font-size: 1em;
+      font-size: 1.4em;
     }
   }
 
@@ -29,6 +29,7 @@
     }
   }
   button {
+    margin-top: 50px;
     font-size: 1em;
     border-radius: 15px;
     padding: $padding/2;

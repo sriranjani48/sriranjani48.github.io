@@ -1,7 +1,7 @@
 .home-contents {
   position: relative;
-
   @include flex-center;
+
   .about-me {
     text-align: center;
     h1 {
@@ -38,7 +38,7 @@
           border: 1px solid black;
           padding: 13px;
         }
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
     }
   }
@@ -67,7 +67,7 @@
     }
     .skills {
       h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
       p {
         font-size: 1.4rem;

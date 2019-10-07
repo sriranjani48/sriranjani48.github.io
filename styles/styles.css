@@ -48,7 +48,7 @@ html {
   max-width: 100%;
   border: 20px solid white;
   height: auto;
-  min-height: 140vh;
+  min-height: 90vh;
 }
 
 header {
@@ -126,6 +126,11 @@ nav a {
   padding: 20px;
   text-decoration: none;
   color: black;
+}
+nav a:hover {
+  color: firebrick;
+  border-bottom: 2px solid firebrick;
+  display: inline-block;
 }
 
 @media (min-width: 56.25em) {
@@ -243,7 +248,7 @@ nav a {
 main {
   max-width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 94vh;
 }
 main section {
   top: 10vh;
@@ -304,7 +309,7 @@ main article {
 }
 .home-contents .skills ul li {
   margin-top: 30px;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 .home-contents .skills ul li i {
   font-size: 1.2em;
@@ -331,7 +336,7 @@ main article {
     font-size: 3rem;
   }
   .home-contents .skills h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .home-contents .skills p {
     font-size: 1.4rem;
@@ -403,6 +408,12 @@ main article {
   transform: translate(-50%, -50%);
   text-align: right;
 }
+.projects .box p i {
+  color: firebrick;
+}
+.projects .box p:hover {
+  color: firebrick;
+}
 .projects .project-article a {
   text-decoration: none;
   color: black;
@@ -423,15 +434,21 @@ main article {
     justify-content: space-evenly;
   }
   .projects .project-article {
+    margin-right: 30px;
     margin-bottom: 100px;
-    width: 450px;
+    width: 500px;
     font-size: 0.8em;
   }
   .projects .box img {
     object-fit: cover;
   }
   .projects .box p {
-    right: -40px;
+    right: -35px;
+  }
+}
+@media (min-width: 78.125em) {
+  .projects .project-article {
+    width: 700px;
   }
 }
 
@@ -446,14 +463,14 @@ main article {
   text-align: center;
 }
 .about-section .about-article h1 {
-  font-size: 1.2em;
+  font-size: 1.6rem;
   padding: 15px;
   display: inline-block;
   border-bottom: 2px solid firebrick;
   margin-bottom: 20px;
 }
 .about-section .about-article p {
-  font-size: 1em;
+  font-size: 1.4em;
 }
 .about-section table caption {
   margin-top: 50px;
@@ -467,6 +484,7 @@ main article {
   font-size: 1em;
 }
 .about-section button {
+  margin-top: 50px;
   font-size: 1em;
   border-radius: 15px;
   padding: 15px;
@@ -495,6 +513,10 @@ main article {
 
 .single-project {
   padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .single-project article {
   display: block;
@@ -594,8 +616,16 @@ main article {
 .project-links a {
   color: black;
 }
+.project-links a i {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: firebrick;
+}
 .project-links a:nth-child(2) {
   margin-left: 100px;
+}
+.project-links a:hover {
+  color: firebrick;
 }
 @media (min-width: 41.875em) {
   .project-links a:nth-child(2) {
@@ -604,9 +634,6 @@ main article {
 }
 
 @media (min-width: 56.25em) {
-  .single-project h1 {
-    margin-left: 100px;
-  }
   .single-project .img img {
     width: 60%;
   }
@@ -645,8 +672,8 @@ footer {
   flex-direction: column;
 }
 footer .contact-me {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-top: 80px;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -684,6 +711,37 @@ footer .contact-me a .i {
     left: 50%;
     transform: translate(60%);
   }
+}
+
+#wave {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background: firebrick;
+}
+
+#wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 100%;
+  height: 80px;
+  background-color: #ebebeb;
+  left: -5px;
+  top: 40px;
+}
+
+#wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 100%;
+  height: 70px;
+  background-color: firebrick;
+  right: 0;
+  top: 27px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -36,6 +36,11 @@ nav {
     text-decoration: none;
     color: $text-color-dark;
   }
+  a:hover {
+    color: firebrick;
+    border-bottom: 2px solid firebrick;
+    display: inline-block;
+  }
 }
 @media (min-width: $tabletPortrait) {
   nav {

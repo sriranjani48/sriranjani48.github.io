@@ -1,5 +1,6 @@
 .single-project {
   padding: 30px;
+  @include flex-center;
 
   article {
     display: block;
@@ -51,6 +52,7 @@
   button:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   }
+
   video {
     width: 100%;
     height: auto;
@@ -98,15 +100,23 @@
 .project-links {
   font-size: 1.1em;
   text-align: center;
-  // position: relative;
+
   bottom: -70%;
   left: 0%;
 
   a {
     color: $text-color-dark;
+    i {
+      margin-right: 10px;
+      margin-left: 10px;
+      color: firebrick;
+    }
   }
   a:nth-child(2) {
     margin-left: 100px;
+  }
+  a:hover {
+    color: firebrick;
   }
 
   @media (min-width: $phoneLandscape) {
@@ -119,7 +129,7 @@
 @media (min-width: $tabletPortrait) {
   .single-project {
     h1 {
-      margin-left: 100px;
+      // margin-left: 100px;
     }
     .img {
       img {

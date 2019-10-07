@@ -58,6 +58,13 @@
       right: -35px;
       transform: translate(-50%, -50%);
       text-align: right;
+
+      i {
+        color: firebrick;
+      }
+    }
+    p:hover {
+      color: firebrick;
     }
   }
   .project-article a {
@@ -81,20 +88,26 @@
     }
 
     .project-article {
+      margin-right: 30px;
       margin-bottom: 100px;
-      width: 450px;
+      width: 500px;
+
       font-size: 0.8em;
     }
 
     .box {
       img {
         object-fit: cover;
-        // min-height: 100%;
-        // width: auto;
       }
       p {
-        right: -40px;
+        right: -35px;
       }
+    }
+  }
+
+  @media (min-width: $desktopMedium) {
+    .project-article {
+      width: 700px;
     }
   }
 }
