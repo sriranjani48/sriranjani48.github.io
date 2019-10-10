@@ -54,8 +54,6 @@ html {
 }
 
 header {
-  position: absolute;
-  top: 0;
   max-width: 100%;
   min-height: 110px;
   display: flex;
