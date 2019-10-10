@@ -1,0 +1,81 @@
+// Main Navigation styles
+nav {
+  $height: 40px;
+  height: 0;
+  overflow: hidden;
+  width: calc(100% + 60px);
+  z-index: 2;
+
+  .activated {
+    transition: all 0.3s ease;
+  }
+  .show & {
+    margin-top: 80px;
+    height: 346px;
+  }
+  ul {
+    @include flex-layout-row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    line-height: $height;
+    color: $text-color-dark;
+  }
+
+  li {
+    text-align: center;
+    color: $text-color-dark;
+    padding: 20px;
+    width: 100%;
+  }
+  a {
+    font-size: 1.2rem;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: $text-color-dark;
+  }
+  a:hover {
+    color: firebrick;
+    border-bottom: 2px solid firebrick;
+    display: inline-block;
+  }
+}
+@media (min-width: $tabletPortrait) {
+  nav {
+    position: fixed;
+    top: 3%;
+    right: 0;
+    @include flex-layout-row;
+    overflow: auto;
+    height: auto;
+    $height: 40px;
+    width: auto;
+
+    transform: scale(1);
+
+    ul {
+      list-style: none;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+    }
+    li {
+      padding: 20px;
+      line-height: $height;
+      flex: 1;
+      cursor: pointer;
+    }
+    a {
+      width: 150px;
+      font-size: 1.4rem;
+
+      #{$link-hover-selector} {
+        height: auto;
+        line-height: $height;
+      }
+    }
+  }
+}

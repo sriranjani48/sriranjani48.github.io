@@ -1,0 +1,51 @@
+.about-section {
+  position: relative;
+  @include flex-center;
+  .about-article {
+    text-align: center;
+    h1 {
+      font-size: 1.6rem;
+      padding: $padding/2;
+      display: inline-block;
+      border-bottom: 2px solid firebrick;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.4em;
+    }
+  }
+
+  table {
+    caption {
+      margin-top: 50px;
+      text-align: center;
+      font-weight: bold;
+      padding: $padding/2;
+    }
+    th,
+    td {
+      text-align: left;
+      font-size: 1em;
+    }
+  }
+  button {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $tabletPortrait) {
+    h1 {
+      font-size: 1.8em;
+    }
+    p {
+      max-width: 700px;
+      font-size: 1.4em;
+    }
+    table {
+      th,
+      td {
+        text-align: left;
+        font-size: 1.3em;
+      }
+    }
+  }
+}

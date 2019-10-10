@@ -13,41 +13,35 @@
 
   h1 {
     text-align: center;
-    font-size: 2.5em;
+    padding: $padding/2;
+    display: inline-block;
+    border-bottom: 2px solid firebrick;
+    font-size: 2rem;
     color: black;
   }
   h2 {
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1.5rem;
     color: black;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: left;
   }
   ins {
     color: grey;
   }
   button {
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
-    background-color: #ebebeb;
-    color: black;
-    border-radius: 10px;
     a {
-      color: black;
+      color: white;
     }
-    padding: 20px;
-    font-size: 1em;
   }
-  button:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  }
+
   video {
     width: 100%;
     height: auto;
@@ -60,7 +54,7 @@
     div {
       img {
         align-content: center;
-        width: 50%;
+        max-width: 100%;
       }
     }
   }
@@ -93,24 +87,44 @@
 }
 
 .project-links {
-  font-size: 1.3em;
+  font-size: 1rem;
   text-align: center;
-  position: relative;
   bottom: -70%;
+  left: 0%;
 
   a {
     color: $text-color-dark;
+    i {
+      margin-right: 10px;
+      margin-left: 10px;
+      color: firebrick;
+    }
   }
   a:nth-child(2) {
-    margin-left: 120px;
+    margin-left: 70px;
+  }
+  a:hover {
+    color: firebrick;
   }
 }
 @media (min-width: $phoneLandscape) {
   .single-project {
-    .project-links {
-      a:nth-child(2) {
-        margin-left: 300px;
+    @include flex-center;
+
+    .project-description {
+      div {
+        img {
+          align-content: center;
+          width: 30%;
+        }
       }
+    }
+  }
+  .project-links {
+    font-size: 1.2rem;
+
+    a:nth-child(2) {
+      margin-left: 300px;
     }
   }
 }
@@ -118,21 +132,22 @@
 @media (min-width: $tabletPortrait) {
   .single-project {
     h1 {
-      margin-left: 100px;
+      // margin-left: 100px;
     }
     .img {
       img {
-        width: 60%;
+        width: 40%;
       }
     }
   }
 
   .project-links {
+    // left: 8%;
     a {
-      font-size: 1.2em;
+      font-size: 1em;
     }
     a:nth-child(2) {
-      margin-left: 100px;
+      margin-left: 300px;
     }
   }
 }
@@ -142,8 +157,8 @@
       div {
         img {
           height: 80px;
-          align-content: center;
-          max-width: 100%;
+          align-items: center;
+          max-width: 20%;
           object-fit: contain;
         }
       }
@@ -151,10 +166,10 @@
   }
   .project-links {
     a {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
     a:nth-child(2) {
-      margin-left: 350px;
+      margin-left: 400px;
     }
   }
 }

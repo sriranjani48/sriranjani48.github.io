@@ -8,7 +8,10 @@
 @import "header";
 @import "logo";
 
-@import "nav";
+@import "button";
+
+// @import "nav";
+@import "horizontal-nav";
 @import "hamburger";
 @import "main";
 
@@ -18,3 +21,5 @@
 
 @import "single-projects";
 @import "footer";
+
+@import "wave";

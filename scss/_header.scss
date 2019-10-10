@@ -1,9 +1,11 @@
 header {
-  min-height: 120px;
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  min-height: 110px;
   @include flex-layout-row;
 
   @media (min-width: $tabletPortrait) {
-    border-right: 1px solid black;
-    // @include flex-center;
+    line-height: 96vh;
   }
 }
