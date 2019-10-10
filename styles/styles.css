@@ -70,7 +70,7 @@ header svg {
   height: 80px;
   width: 200px;
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 5%;
   z-index: 1;
 }
@@ -78,7 +78,7 @@ header svg .svg-logo {
   fill: black;
   font-variant: small-caps;
   font-family: "Phosphate";
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-style: italic;
 }
 @media (min-width: 56.25em) {
@@ -191,13 +191,13 @@ nav a:hover {
 }
 .menu-btn {
   display: block;
-  width: 40px;
+  width: 34px;
   background-color: transparent;
   border: none;
   padding: 0;
   position: absolute;
-  top: 6%;
-  right: 10%;
+  top: 3%;
+  right: 8%;
   z-index: 99999;
 }
 .menu-btn .button-content {
