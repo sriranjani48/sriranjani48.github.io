@@ -1,11 +1,14 @@
 main {
   max-width: 100%;
   margin: 0 auto;
-  min-height: 94vh;
+  min-height: 66vh;
+  position: relative;
   section {
-    top: 10vh;
+    margin-top: 200px;
+    // top: 20vh;
     margin-left: 0;
     padding: $padding/2;
+    // position: absolute;
   }
   article {
     padding: $padding/2;

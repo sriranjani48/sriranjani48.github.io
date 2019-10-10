@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,600,700|Raleway:400,500,600,700|Roboto:400,500,700&display=swap");
 *,
 *:before,
 *:after {
@@ -48,10 +49,13 @@ html {
   max-width: 100%;
   border: 20px solid white;
   height: auto;
-  min-height: 90vh;
+  min-height: 96vh;
+  position: relative;
 }
 
 header {
+  position: absolute;
+  top: 0;
   max-width: 100%;
   min-height: 110px;
   display: flex;
@@ -90,6 +94,25 @@ header svg .svg-logo {
   }
 }
 
+button {
+  font-size: 0.7rem;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  background-color: rgba(178, 34, 34, 0.9);
+  color: white;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 56.25em) {
+  button {
+    font-size: 1.2rem;
+  }
+}
 nav {
   height: 0;
   overflow: hidden;
@@ -248,10 +271,11 @@ nav a:hover {
 main {
   max-width: 100%;
   margin: 0 auto;
-  min-height: 94vh;
+  min-height: 66vh;
+  position: relative;
 }
 main section {
-  top: 10vh;
+  margin-top: 200px;
   margin-left: 0;
   padding: 15px;
 }
@@ -318,18 +342,6 @@ main article {
   border: 1px solid black;
   padding: 13px;
 }
-.home-contents .btn-project button {
-  font-size: 1rem;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-  background-color: rgba(178, 34, 34, 0.9);
-  color: white;
-}
-.home-contents .btn-project button:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
 @media (min-width: 56.25em) {
   .home-contents .about-me h1 {
     margin-top: 40px;
@@ -372,7 +384,6 @@ main article {
 }
 .projects .project-article {
   margin-top: 120px;
-  margin-bottom: 130px;
   max-width: 100%;
   height: 350px;
   position: relative;
@@ -384,32 +395,26 @@ main article {
   transition: 0.3s;
   border-radius: 10px;
 }
-.projects .project-article:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.projects h2 {
+.projects h2,
+.projects h3 {
   margin-bottom: 30px;
   position: absolute;
-  top: -13%;
+  top: -16%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.projects h3 {
+  top: -8%;
+}
 .projects .box img {
   object-fit: contain;
-  height: 260px;
+  height: 250px;
   max-width: 100%;
 }
-.projects .box p {
-  font-size: 1.3em;
-  position: absolute;
-  top: 320px;
-  right: -35px;
-  transform: translate(-50%, -50%);
-  text-align: right;
-}
-.projects .box p i {
-  color: firebrick;
+.projects .box button i {
+  margin-left: 10px;
+  color: white;
 }
 .projects .box p:hover {
   color: firebrick;
@@ -485,16 +490,6 @@ main article {
 }
 .about-section button {
   margin-top: 50px;
-  font-size: 1em;
-  border-radius: 15px;
-  padding: 15px;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
-  background-color: rgba(178, 34, 34, 0.9);
-  color: white;
-  transition: 0.3s;
-}
-.about-section button:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 56.25em) {
   .about-section h1 {
@@ -513,10 +508,6 @@ main article {
 
 .single-project {
   padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .single-project article {
   display: block;
@@ -532,16 +523,16 @@ main article {
   padding: 15px;
   display: inline-block;
   border-bottom: 2px solid firebrick;
-  font-size: 2.5em;
+  font-size: 2rem;
   color: black;
 }
 .single-project h2 {
   text-align: left;
-  font-size: 1.8em;
+  font-size: 1.5rem;
   color: black;
 }
 .single-project h3 {
-  font-size: 1.3em;
+  font-size: 1rem;
   text-align: center;
 }
 .single-project p {
@@ -551,20 +542,8 @@ main article {
 .single-project ins {
   color: grey;
 }
-.single-project button {
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-  background-color: #ebebeb;
-  color: black;
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 1em;
-}
 .single-project button a {
-  color: black;
-}
-.single-project button:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  color: white;
 }
 .single-project video {
   width: 100%;
@@ -575,7 +554,7 @@ main article {
 }
 .single-project .project-description div img {
   align-content: center;
-  width: 50%;
+  max-width: 100%;
 }
 .single-project .img,
 .single-project .video {
@@ -608,7 +587,7 @@ main article {
 }
 
 .project-links {
-  font-size: 1.1em;
+  font-size: 1rem;
   text-align: center;
   bottom: -70%;
   left: 0%;
@@ -622,20 +601,34 @@ main article {
   color: firebrick;
 }
 .project-links a:nth-child(2) {
-  margin-left: 100px;
+  margin-left: 70px;
 }
 .project-links a:hover {
   color: firebrick;
 }
+
 @media (min-width: 41.875em) {
+  .single-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .single-project .project-description div img {
+    align-content: center;
+    width: 30%;
+  }
+
+  .project-links {
+    font-size: 1.2rem;
+  }
   .project-links a:nth-child(2) {
     margin-left: 300px;
   }
 }
-
 @media (min-width: 56.25em) {
   .single-project .img img {
-    width: 60%;
+    width: 40%;
   }
 
   .project-links a {
@@ -648,8 +641,8 @@ main article {
 @media (min-width: 78.125em) {
   .single-project .project-description div img {
     height: 80px;
-    align-content: center;
-    max-width: 100%;
+    align-items: center;
+    max-width: 20%;
     object-fit: contain;
   }
 
@@ -661,7 +654,6 @@ main article {
   }
 }
 footer {
-  display: block;
   position: relative;
   margin: 0 auto;
   max-width: 100%;
@@ -683,12 +675,17 @@ footer .contact-me .fa-envelope-o:before {
 footer .contact-me a {
   font-size: 1rem;
 }
-footer .contact-me a .i {
-  font-size: 1.4em;
+footer .contact-me a i {
+  font-size: 2em;
   margin-right: 15px;
   color: black;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+footer .contact-me b {
+  margin-top: 30px;
+  font-weight: normal;
+  font-size: 0.9rem;
 }
 @media (min-width: 56.25em) {
   footer .contact-me {
@@ -696,12 +693,8 @@ footer .contact-me a .i {
     bottom: 0;
   }
   footer .contact-me a i {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-right: 20px;
-  }
-  footer .contact-me b {
-    font-weight: normal;
-    font-size: 0.8rem;
   }
 }
 @media (min-width: 78.125em) {

@@ -42,21 +42,6 @@
       }
     }
   }
-  .btn-project {
-    button {
-      font-size: 1rem;
-      border-radius: 15px;
-      padding: $padding/2;
-      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
-      transition: 0.3s;
-
-      background-color: rgba(178, 34, 34, 0.9);
-      color: white;
-    }
-    button:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    }
-  }
 
   @media (min-width: $tabletPortrait) {
     .about-me {
