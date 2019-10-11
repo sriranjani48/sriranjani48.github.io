@@ -126,10 +126,9 @@ nav .activated {
 }
 nav ul {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   list-style: none;
   line-height: 40px;
@@ -168,6 +167,9 @@ nav a:hover {
     transform: scale(1);
   }
   nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
     color: black;
     text-align: center;
@@ -182,7 +184,7 @@ nav a:hover {
   }
   nav a {
     width: 150px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   nav a:hover, nav a:focus, nav a:active {
     height: auto;
@@ -273,7 +275,7 @@ main {
   position: relative;
 }
 main section {
-  margin-top: 200px;
+  margin-top: 50px;
   margin-left: 0;
   padding: 15px;
 }

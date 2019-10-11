@@ -14,9 +14,8 @@ nav {
     height: 346px;
   }
   ul {
-    @include flex-layout-row;
-    margin: 0;
-    padding: 0;
+    @include flex-center;
+
     width: 100%;
     list-style: none;
     line-height: $height;
@@ -56,6 +55,7 @@ nav {
     transform: scale(1);
 
     ul {
+      @include flex-layout-row;
       list-style: none;
       color: black;
       text-align: center;
@@ -70,7 +70,7 @@ nav {
     }
     a {
       width: 150px;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
 
       #{$link-hover-selector} {
         height: auto;
