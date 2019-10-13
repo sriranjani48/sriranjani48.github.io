@@ -22,8 +22,10 @@
       font-weight: bold;
       padding: $padding/2;
     }
+
     th,
     td {
+      padding: 10px;
       text-align: left;
       font-size: 1em;
     }

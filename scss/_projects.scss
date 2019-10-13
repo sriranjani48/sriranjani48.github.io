@@ -7,7 +7,7 @@
     padding: $padding/2;
     position: relative;
     top: 16%;
-    left: 53%;
+    left: 50%;
     margin-top: 50px;
   }
 
@@ -21,7 +21,6 @@
   .project-article {
     margin-top: 120px;
     max-width: 100%;
-    height: 350px;
     position: relative;
     padding: 16px;
     text-align: center;
@@ -29,11 +28,8 @@
     background-color: #ebebeb;
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
-    border-radius: 10px;
   }
-  .project-article:hover {
-    // box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
+
   h2,
   h3 {
     margin-bottom: $padding;
@@ -44,19 +40,19 @@
     text-align: center;
   }
   h3 {
+    font-size: 1rem;
     top: -8%;
   }
   .box {
     img {
       object-fit: contain;
-      height: 250px;
       max-width: 100%;
     }
 
     button {
       i {
         margin-left: 10px;
-        color: white;
+        // color: white;
       }
     }
     p:hover {
@@ -87,7 +83,6 @@
       margin-right: 30px;
       margin-bottom: 100px;
       width: 500px;
-
       font-size: 0.8em;
     }
 

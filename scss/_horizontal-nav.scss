@@ -37,25 +37,23 @@ nav {
   }
   a:hover {
     color: firebrick;
-    border-bottom: 2px solid firebrick;
     display: inline-block;
   }
 }
 @media (min-width: $tabletPortrait) {
   nav {
-    position: fixed;
-    top: 3%;
+    position: absolute;
+    top: -10px;
     right: 0;
-    @include flex-layout-row;
     overflow: auto;
     height: auto;
     $height: 40px;
     width: auto;
-
     transform: scale(1);
 
     ul {
       @include flex-layout-row;
+      flex-direction: row;
       list-style: none;
       color: black;
       text-align: center;
@@ -70,7 +68,7 @@ nav {
     }
     a {
       width: 150px;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
 
       #{$link-hover-selector} {
         height: auto;

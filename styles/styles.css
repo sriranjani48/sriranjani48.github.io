@@ -83,32 +83,50 @@ header svg .svg-logo {
 }
 @media (min-width: 56.25em) {
   header svg {
-    position: fixed;
-    top: 5%;
+    position: absolute;
+    top: 1%;
     left: 5.5%;
   }
   header svg .svg-logo {
     font-size: 2.8em;
   }
 }
+header svg:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px firebrick;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+header svg:hover:after {
+  transform: scaleX(1);
+}
 
 button {
   font-size: 0.7rem;
-  border-radius: 15px;
   padding: 15px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
-  background-color: rgba(178, 34, 34, 0.9);
+  background-color: #b22222e6;
   color: white;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #fff 50%, #fff);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.3s ease-in;
 }
 
 button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-position: 0 0;
+  color: #000;
+}
+button:hover a:hover {
+  color: black;
 }
 
 @media (min-width: 56.25em) {
   button {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 nav {
@@ -149,18 +167,14 @@ nav a {
 }
 nav a:hover {
   color: firebrick;
-  border-bottom: 2px solid firebrick;
   display: inline-block;
 }
 
 @media (min-width: 56.25em) {
   nav {
-    position: fixed;
-    top: 3%;
+    position: absolute;
+    top: -10px;
     right: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     overflow: auto;
     height: auto;
     width: auto;
@@ -170,6 +184,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
     list-style: none;
     color: black;
     text-align: center;
@@ -184,7 +199,7 @@ nav a:hover {
   }
   nav a {
     width: 150px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   nav a:hover, nav a:focus, nav a:active {
     height: auto;
@@ -198,9 +213,11 @@ nav a:hover {
   border: none;
   padding: 0;
   position: absolute;
-  top: 3%;
+  top: 50px;
   right: 8%;
   z-index: 99999;
+  box-shadow: none;
+  background-position: none;
 }
 .menu-btn .button-content {
   height: 24px;
@@ -333,10 +350,10 @@ main article {
 }
 .home-contents .skills ul li {
   margin-top: 30px;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .home-contents .skills ul li i {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-right: 10px;
   border-radius: 50%;
   border: 1px solid black;
@@ -373,7 +390,7 @@ main article {
   padding: 15px;
   position: relative;
   top: 16%;
-  left: 53%;
+  left: 50%;
   margin-top: 50px;
 }
 .projects .row-01,
@@ -385,7 +402,6 @@ main article {
 .projects .project-article {
   margin-top: 120px;
   max-width: 100%;
-  height: 350px;
   position: relative;
   padding: 16px;
   text-align: center;
@@ -393,7 +409,6 @@ main article {
   background-color: #ebebeb;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
-  border-radius: 10px;
 }
 .projects h2,
 .projects h3 {
@@ -405,16 +420,15 @@ main article {
   text-align: center;
 }
 .projects h3 {
+  font-size: 1rem;
   top: -8%;
 }
 .projects .box img {
   object-fit: contain;
-  height: 250px;
   max-width: 100%;
 }
 .projects .box button i {
   margin-left: 10px;
-  color: white;
 }
 .projects .box p:hover {
   color: firebrick;
@@ -485,6 +499,7 @@ main article {
 }
 .about-section table th,
 .about-section table td {
+  padding: 10px;
   text-align: left;
   font-size: 1em;
 }
@@ -507,6 +522,10 @@ main article {
 }
 
 .single-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 30px;
 }
 .single-project article {
@@ -542,6 +561,11 @@ main article {
 .single-project ins {
   color: grey;
 }
+.single-project button {
+  position: relative;
+  left: 20%;
+  top: 12%;
+}
 .single-project button a {
   color: white;
 }
@@ -552,23 +576,31 @@ main article {
 .single-project .about {
   margin: 0 auto;
 }
+.single-project .project-description {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .single-project .project-description div img {
   align-content: center;
   max-width: 100%;
+}
+.single-project .project-description .gist {
+  max-width: 210px;
 }
 .single-project .img,
 .single-project .video {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
   transition: 0.6s;
   padding: 15px;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
   border: 0.5px solid #ebebeb;
-  background-color: #ebebeb;
 }
 .single-project .img img,
 .single-project .video img {
@@ -588,7 +620,6 @@ main article {
 
 .project-links {
   font-size: 1rem;
-  text-align: center;
   bottom: -70%;
   left: 0%;
 }
@@ -596,12 +627,12 @@ main article {
   color: black;
 }
 .project-links a i {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
   color: firebrick;
 }
 .project-links a:nth-child(2) {
-  margin-left: 70px;
+  margin-left: 10px;
 }
 .project-links a:hover {
   color: firebrick;
@@ -614,12 +645,15 @@ main article {
     align-items: center;
     flex-direction: column;
   }
-  .single-project .project-description div img {
-    align-content: center;
-    width: 30%;
+  .single-project .project-description .img img {
+    object-fit: contain;
+  }
+  .single-project .project-description .gist {
+    max-width: 600px;
   }
 
   .project-links {
+    text-align: center;
     font-size: 1.2rem;
   }
   .project-links a:nth-child(2) {
@@ -628,7 +662,7 @@ main article {
 }
 @media (min-width: 56.25em) {
   .single-project .img img {
-    width: 40%;
+    width: 50%;
   }
 
   .project-links a {
@@ -639,13 +673,6 @@ main article {
   }
 }
 @media (min-width: 78.125em) {
-  .single-project .project-description div img {
-    height: 80px;
-    align-items: center;
-    max-width: 20%;
-    object-fit: contain;
-  }
-
   .project-links a {
     font-size: 1.2em;
   }
@@ -706,35 +733,15 @@ footer .contact-me b {
   }
 }
 
-#wave {
-  position: relative;
-  height: 70px;
-  width: 100%;
-  background: firebrick;
-}
-
-#wave:before {
-  content: "";
+li a:after {
   display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 100%;
-  height: 80px;
-  background-color: #ebebeb;
-  left: -5px;
-  top: 40px;
-}
-
-#wave:after {
   content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 100%;
-  height: 70px;
-  background-color: firebrick;
-  right: 0;
-  top: 27px;
+  border-bottom: solid 3px firebrick;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+li a:hover:after {
+  transform: scaleX(1);
 }
 
 /*# sourceMappingURL=styles.css.map */
