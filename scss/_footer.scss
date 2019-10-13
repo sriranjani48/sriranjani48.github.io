@@ -4,9 +4,14 @@ footer {
   max-width: 100%;
   text-align: center;
   @include flex-center;
+  h1 {
+    margin-top: 40px;
+    display: inline-block;
+    border-bottom: 2px solid firebrick;
+  }
   .contact-me {
     margin-bottom: 40px;
-    margin-top: 80px;
+    margin-top: 20px;
 
     text-align: center;
     font-size: 1.2rem;
@@ -34,10 +39,6 @@ footer {
 
   @media (min-width: $tabletPortrait) {
     .contact-me {
-      // position: absolute;
-      left: 45%;
-      bottom: 0;
-
       a {
         i {
           font-size: 2.5rem;

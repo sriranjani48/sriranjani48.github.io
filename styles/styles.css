@@ -561,11 +561,6 @@ main article {
 .single-project ins {
   color: grey;
 }
-.single-project button {
-  position: relative;
-  left: 20%;
-  top: 12%;
-}
 .single-project button a {
   color: white;
 }
@@ -690,9 +685,14 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+footer h1 {
+  margin-top: 40px;
+  display: inline-block;
+  border-bottom: 2px solid firebrick;
+}
 footer .contact-me {
   margin-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 20px;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -715,10 +715,6 @@ footer .contact-me b {
   font-size: 0.9rem;
 }
 @media (min-width: 56.25em) {
-  footer .contact-me {
-    left: 45%;
-    bottom: 0;
-  }
   footer .contact-me a i {
     font-size: 2.5rem;
     margin-right: 20px;
