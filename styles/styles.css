@@ -19,6 +19,7 @@ p {
 
 p {
   line-height: 1.8;
+  font-family: "Roboto", sans-serif;
 }
 
 button,
@@ -35,8 +36,16 @@ a {
   text-decoration: none;
 }
 
+h1.h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+}
+
 body {
   margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 html {
@@ -103,6 +112,7 @@ header svg:hover:after {
 }
 
 button {
+  font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
   padding: 15px;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
@@ -199,7 +209,7 @@ nav a:hover {
   }
   nav a {
     width: 150px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   nav a:hover, nav a:focus, nav a:active {
     height: auto;
