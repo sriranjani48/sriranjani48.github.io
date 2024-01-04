@@ -87,7 +87,7 @@ header svg .svg-logo {
   fill: black;
   font-variant: small-caps;
   font-family: "Phosphate";
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-style: italic;
 }
 @media (min-width: 56.25em) {
@@ -97,7 +97,7 @@ header svg .svg-logo {
     left: 5.5%;
   }
   header svg .svg-logo {
-    font-size: 2.8em;
+    font-size: 2rem;
   }
 }
 header svg:after {
